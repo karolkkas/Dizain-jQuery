@@ -49,14 +49,17 @@ $(document).ready(function(){
     });
   });
 
-  //IE fixed bug with juping background-image
-  $('body').on("mousewheel", function () {
-    event.preventDefault();
   
-    var wheelDelta = event.wheelDelta;
-  
-    var currentScrollPosition = window.pageYOffset;
-    window.scrollTo(0, currentScrollPosition - wheelDelta);
-  });
+  if(/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) {
+      //IE fixed bug with juping background-image
+      $('body').on("mousewheel", function () {
+        event.preventDefault();
+      
+        var wheelDelta = event.wheelDelta / 3;
+      
+        var currentScrollPosition = window.pageYOffset;
+        window.scrollTo(0, currentScrollPosition - wheelDelta);
+      });
+    }
   
 });
