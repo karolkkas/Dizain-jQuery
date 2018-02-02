@@ -127,6 +127,10 @@
         font-size: 2.5rem;
     }
     
+    .nav__outer .container {
+        width: 100%;
+    }
+
     .heading-secondary {
         line-height: 3rem;
         text-align: center;
@@ -138,8 +142,8 @@
         z-index: 9;        
         
         img {
-        width:200px;
-        transform: translate3d(0,0,0)
+            width:200px;
+            transform: translate3d(0,0,0)
         }
     }
     
@@ -149,6 +153,23 @@
         right: 5%;
     }
 
+    .member__desc {
+        max-height: 0;
+        visibility: hidden;
+        opacity: 0;
+        transition: max-height .5s, opacity 1s;
+
+        &.active {
+            max-height: 500px;
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+    .member__btn {
+        display: block;
+    }
+    
     .arrow-up {
         bottom:1rem;
         right:1rem;

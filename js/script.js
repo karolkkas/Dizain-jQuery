@@ -12,6 +12,18 @@ $(document).ready(function(){
         $('body').removeClass('menu-opened');
     });
 
+    $('.member__btn').each(function(index, el) {
+        $(this).click(function(e) {
+            var $desc = $(el).parent().find(".member__desc");
+            $('.member__desc').removeClass('active')
+            if (!$desc.hasClass('.active')) {
+                $desc.addClass('active');
+            } else {
+                $desc.removeClass('active');
+            }
+        });
+    })
+
     $(window).scroll(function () {
         var location = $(this).scrollTop();
         if(location < 80) {
@@ -48,6 +60,8 @@ $(document).ready(function(){
       }
     });
   });
+
+
 
   
   if(/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) {
