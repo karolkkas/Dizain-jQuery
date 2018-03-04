@@ -6,6 +6,9 @@
 
 .bg-prlx-1 {
     background: url('../img/header-prlx.jpg') no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     animation: fadeIn 2s ease;
 }

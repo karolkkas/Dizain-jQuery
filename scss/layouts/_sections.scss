@@ -53,6 +53,9 @@
     flex:1 0 50%;
     margin:0;
     background: url('../img/studio.jpg') no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
 
     
@@ -66,6 +69,9 @@
 
 .bg-prlx-2 {
     background: url('../img/about-section.jpg') no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
 }
 
@@ -148,6 +154,9 @@
 
 #tarrif.article__wrapper {
     background: url('../img/bg-tarrif2.jpeg') no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
 }
 
