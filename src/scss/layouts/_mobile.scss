@@ -175,3 +175,65 @@
         right:1rem;
     }
 }
+
+//Apple
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .bg-prlx-1 {
+        background-attachment: scroll;
+    }
+    .bg-prlx-2 {
+        background-attachment: scroll;
+    }
+
+    #tarrif.article__wrapper {
+        background-attachment: scroll;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    .bg-prlx-1 {
+        background-attachment: scroll;
+    }
+    .bg-prlx-2 {
+        background-attachment: scroll;
+    }
+    #tarrif.article__wrapper {
+        background-attachment: scroll;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .bg-prlx-1 {
+        background-attachment: scroll;
+    }
+    .bg-prlx-2 {
+        background-attachment: scroll;
+    }
+    #tarrif.article__wrapper {
+        background-attachment: scroll;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .bg-prlx-1 {
+        background-attachment: scroll;
+    }
+    .bg-prlx-2 {
+        background-attachment: scroll;
+    }
+    #tarrif.article__wrapper {
+        background-attachment: scroll;
+    }
+}
